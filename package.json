@@ -1,6 +1,6 @@
 {
   "name": "json-peek",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Stringify JSON *just enough* to see what it is",
   "main": "index.js",
   "repository": "https://github.com/jamiebuilds/json-peek",
