@@ -3,6 +3,7 @@
 /*::
 type JSONValue =
   | null
+  | undefined
   | boolean
   | number
   | string
