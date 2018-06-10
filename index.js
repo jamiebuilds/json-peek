@@ -3,6 +3,7 @@
 /*::
 type JSONValue =
   | null
+  | undefined
   | boolean
   | number
   | string
@@ -13,6 +14,8 @@ type JSONValue =
 function print(val, nested) {
   if (val === null) {
     return 'null';
+  } else if (val === undefined) {
+    return 'undefined';
   } else if (typeof val === 'boolean') {
     return String(val);
   } else if (typeof val === 'number') {

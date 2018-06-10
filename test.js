@@ -8,6 +8,7 @@ function peek(t, val, str) {
 }
 
 test('null', peek, null, 'null');
+test('undefined', peek, undefined, 'undefined');
 test('true', peek, true, 'true');
 test('false', peek, false, 'false');
 test('number', peek, 12345, '12345');
