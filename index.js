@@ -6,6 +6,7 @@ type JSONValue =
   | boolean
   | number
   | string
+  | Function
   | Array<JSONValue>
   | { [key: string]: JSONValue };
 */
@@ -27,6 +28,8 @@ function print(val, nested) {
       (val.length > max ? '...' : '') +
       '"'
     );
+  } else if (typeof val === 'function') {
+    return print(String(val), nested);
   } else if (Array.isArray(val)) {
     let body = '';
     let index = 0;
